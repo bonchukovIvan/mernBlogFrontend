@@ -70,10 +70,10 @@ export const Login = () => {
       helperText={errors.password?.message}
       { ...register('password', {required: 'Укажите пароль'})}
       fullWidth />
-          </form>
-      <Button disabled={!isValid} type="submit" size="large" variant="contained" fullWidth>
+      <Button type="submit" size="large" variant="contained" fullWidth>
         Войти
       </Button>
+      </form>
     </Paper>
   );
 };
